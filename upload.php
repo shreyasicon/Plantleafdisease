@@ -37,11 +37,12 @@ if(isset($_POST['submit'])){
             "message" => "Add $newFileName",
             "content" => base64_encode(file_get_contents($fileTmpName)),
             "branch" => $githubBranch,
-            
+            "name" => "Sai",
+                "email" => "ghsaishreyas3@gmail.com"
             ),
             "author" => array(
-                "name" => "ICON",
-                
+                "name" => "Icon",
+                "email" => "ghsaishreyas@gmail.com"
             ),
             "sha" => ""
         )));
