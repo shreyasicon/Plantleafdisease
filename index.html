@@ -19,6 +19,20 @@
         <div id="result"></div>
     </div>
     <script src="plant.js"></script>
+    <script>
+  // Get the file input element
+  const fileInput = document.querySelector('input[name="fileToUpload"]');
+
+  // Add an event listener to the file input element to handle file selection
+  fileInput.addEventListener('change', function(event) {
+    const file = event.target.files[0]; // Get the selected file
+    const formData = new FormData(); // Create a new FormData object
+    formData.append('fileToUpload', file); // Add the file to the FormData object
+    const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object
+    xhr.open('POST', 'upload.php'); // Specify the URL of the server-side script to handle the file upload
+    xhr.send(formData); // Send the FormData object to the server
+  });
+</script>
 </body>
 
 </html>
