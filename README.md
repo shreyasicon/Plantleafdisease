@@ -32,19 +32,3 @@ This project employs a deep learning approach using a **Convolutional Neural Net
 *   **VGG-19:** The pre-trained deep learning model architecture used for feature extraction.
 *   **NumPy:** A fundamental package for numerical computation and data preprocessing.
 *   **Matplotlib:** A library for creating static, animated, and interactive visualizations.
-
-### How to Use
-
-To get started with the project, follow these steps:
-1.  **Clone the repository:**
-    ```
-    git clone https://github.com/your-username/plant-disease-detector.git
-    ```
-2.  **Install dependencies:** Navigate to the project directory and install the required Python packages.
-    ```
-    pip install -r requirements.txt
-    ```
-3.  **Run the application:** Execute the main script to start making predictions on your plant leaf images.
-    ```
-    python predict.py --image path/to/your/image.jpg
-    ```
